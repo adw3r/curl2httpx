@@ -1,6 +1,5 @@
-FROM node:24.3
+FROM --platform=linux/arm64 node:24.3-alpine
 WORKDIR /app
 COPY package.json .
 COPY server.js .
-RUN npm install node-linux-arm64
 RUN npm install
