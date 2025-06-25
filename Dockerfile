@@ -1,7 +1,7 @@
-from node:slim
+FROM oven/bun:latest
+
 WORKDIR /app
-COPY package-lock.json .
 COPY package.json .
 COPY server.js .
 
-RUN npm install
+RUN bun install

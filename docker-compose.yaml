@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    command: npm run-script run
+    command: bun run server.js
     ports:
       - "3001:3001"
     volumes:
