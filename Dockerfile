@@ -1,6 +1,6 @@
-FROM oven/bun:latest
+FROM node:24.3
 WORKDIR /app
 COPY package.json .
 COPY server.js .
-RUN bun install node-linux-arm64
-RUN bun install
+RUN npm install node-linux-arm64
+RUN npm install
