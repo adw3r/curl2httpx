@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    command: npm run-script run
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./public:/app/public
+      - ./dist:/app/dist

@@ -1,0 +1,21 @@
+{
+  "name": "curl2httpx",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "run": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "cors": "^2.8.5",
+    "curlconverter": "^4.12.0",
+    "express": "^5.1.0",
+    "htmx.org": "^2.0.5",
+    "webpack": "^5.99.9"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}

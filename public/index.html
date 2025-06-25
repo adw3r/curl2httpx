@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>curl to htmx</title>
+    <script src="main.js"></script>
+    <style>
+        body {
+            font-size: 44px;
+            background-color: #222;
+            color: #eee;
+        }
+        textarea {
+            background-color: #222!important;
+            color: #eee!important;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid p-5">
+    <div class="row">
+            <div class="col">
+                    <textarea id="curl"
+                              hx-post="/convert"
+                              name="curl"
+                              hx-trigger="input"
+                              hx-target="#result"
+                              hx-swap="innerHTML"
+                              class="form-control"
+                              rows="25"
+                              placeholder="Insert cURL code here..."></textarea>
+            </div>
+            <div class="col">
+                    <textarea id="result" class="form-control" rows="25" onclick="copy()" placeholder="Here's going to appear httpx code."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
